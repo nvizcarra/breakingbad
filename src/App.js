@@ -1,7 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
 import styled from '@emotion/styled';
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  flex-direction: column;
+`;
 
 const Button = styled.button`
   background: -webkit-linear-gradient(top left, #007d35 0%, #007d35 40%, #0f574e 100%);
@@ -16,9 +20,11 @@ const Button = styled.button`
 
 function App() {
   return (
-    <Button>
-      Obtain Phrase
-    </Button>
+    <Container>
+      <Button>
+        Obtain Phrase
+      </Button>
+    </Container>
   );
 }
 
