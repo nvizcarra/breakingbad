@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Phrase = ({}) => {
+const Phrase = ({phrase}) => {
     return (
-        <h1>Phrase</h1>
+        <div>
+            <h1>{phrase.quote}</h1>
+            <p>- {phrase.author}</p>
+        </div>
     );
 }
 
