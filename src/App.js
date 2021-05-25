@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 // Import Emotion Styled
 import styled from '@emotion/styled';
+// Import Phrase component
+import Phrase from './components/Phrase';
 
 // Create Button Container
 const Container = styled.div`
@@ -37,6 +39,10 @@ function App() {
 
   return (
     <Container>
+      {/* Insert Phrase before button */}
+      <Phrase
+        phrase={phrase}
+      />
       <Button
         onClick={callAPI}
       >
