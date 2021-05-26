@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// useState for the Phrases and useEffect is used to show a random phrase itself when the user lands on our website
+import React, { useState, useEffect } from 'react';
 // Import Emotion Styled
 import styled from '@emotion/styled';
 // Import Phrase component
@@ -36,6 +37,11 @@ function App() {
     keepPhrase(phrase[0]);
     
   }
+
+  // Show a random phrase with useEffect
+  useEffect( () => {
+    callAPI()
+  }, []);
 
   return (
     <Container>
